@@ -1,0 +1,33 @@
+.nav-tabs>li>a, .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+    text-align: center;
+    border: 0;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+    background:#1DA664;
+    color: #fff;
+}
+
+.nav-tabs{
+    border-bottom:0;
+}
+.nav-tabs>li {
+    float: left;
+    margin-bottom: 1px;
+    padding: 0;
+}
+
+.fa-restaurant:before {
+  content: "\f0f5";
+}
+.fa-place:before {
+  content: "\f083";
+}
+.fa-bar:before {
+  content: "\f000";
+}
+.fa-airport:before {
+  content: "\f072";
+}
+.fa-mall:before {
+  content: "\f290";
+}

@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/lba?currentSchema=teams
+    username: lba
+    password: lb4Us3r
