@@ -1,2 +1,2 @@
 # XoveTIC LBA Teams
-Xovetic Workshop: service storing all the league teams information
+XoveTIC Workshop: service storing all the league teams information
