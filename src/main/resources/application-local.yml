@@ -1,5 +1,13 @@
+server:
+  port: 8082
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/lba?currentSchema=teams
     username: lba
     password: lb4Us3r
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
