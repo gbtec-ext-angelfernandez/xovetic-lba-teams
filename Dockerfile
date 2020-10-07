@@ -8,7 +8,7 @@ ENV JAVA_TOOL_OPTIONS=""
 ENV SERVER_PORT=8080
 EXPOSE 8080  
 
-COPY --from=build /usr/src/app/target/teams-1.1.0-SNAPSHOT.jar /teams-1.1.0-SNAPSHOT.jar  
+COPY --from=build /usr/src/app/target/teams-1.2.0-SNAPSHOT.jar /teams-1.2.0-SNAPSHOT.jar  
 
 RUN adduser --system lbauser
 RUN mkdir /var/log/biccw
@@ -16,4 +16,4 @@ RUN chown lbauser:nogroup /var/log/biccw/ -R
 
 USER lbauser
 
-ENTRYPOINT ["java","-jar","/teams-1.1.0-SNAPSHOT.jar", "com.gbtec.lba.teams.TeamsApplication"]
+ENTRYPOINT ["java","-jar","/teams-1.2.0-SNAPSHOT.jar", "com.gbtec.lba.teams.TeamsApplication"]
