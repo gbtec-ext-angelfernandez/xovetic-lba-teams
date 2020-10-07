@@ -7,6 +7,10 @@ server:
       mime-types: application/json, application/xml
 
 spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://lbadb:5432/lba?currentSchema=teams
@@ -30,6 +34,13 @@ spring:
       multipart:
         enabled: true
 
+eureka:
+  client:
+    enabled: true
+    serviceUrl:
+      defaultZone: http://eureka:1111/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 5   # DO NOT DO THIS IN PRODUCTION
 
 logging:
   file: ${java.io.tmpdir}/${spring.application.name}.log
